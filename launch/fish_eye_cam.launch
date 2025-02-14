@@ -29,7 +29,7 @@
   <node name="right_fisheye_cam" pkg="usb_cam" type="usb_cam_node" output="screen" >
     <param name="white_balance_temperature_auto" value="false" />
     <param name="focus_auto" value="false" />
-    <param name="video_device" value="/dev/video8" />
+    <param name="video_device" value="/dev/video6" />
     <param name="image_width" value="1920" />
     <param name="image_height" value="1080" />
     <param name="pixel_format" value="mjpeg" />
