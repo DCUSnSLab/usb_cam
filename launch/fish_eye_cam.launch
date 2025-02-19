@@ -1,14 +1,12 @@
 <launch>
   <!-- 뒤쪽 카메라 노드 -->
-  <node name="back_fisheye_cam" pkg="usb_cam" type="usb_cam_node" output="screen" >
-    <param name="white_balance_temperature_auto" value="false" />
-    <param name="focus_auto" value="false" />
+  <node name="cam" pkg="usb_cam" type="usb_cam_node" output="screen" >
     <param name="video_device" value="/dev/video2" />
     <param name="image_width" value="1920" />
     <param name="image_height" value="1080" />
     <param name="pixel_format" value="mjpeg" />
     <param name="color_format" value="yuv422p" />
-    <param name="camera_frame_id" value="back_fisheye_cam" />
+    <param name="camera_frame_id" value="cam" />
     <param name="io_method" value="mmap"/>
   </node>
 
